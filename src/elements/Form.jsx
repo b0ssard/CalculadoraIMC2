@@ -1,7 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Col } from "reactstrap";
+import Calculator from "./Calculator";
 
 function Form() {
+  const [heightValue, setHeightValue] = useState("");
+
+  const handleHeightChange = (event) => {
+    setHeightValue(event.target.value);
+  };
+
+  const [weightValue, setWeightValue] = useState("");
+
+  const handleWeightChange = (event) => {
+    setWeightValue(event.target.value);
+  };
   return (
     <form>
       <div className="mb-3">
@@ -18,6 +30,8 @@ function Form() {
               id="inputHeight"
               aria-describedby="inputHeight"
               name="height"
+              value={heightValue}
+              onChange={handleHeightChange}
             />
           </Col>
         </Container>
@@ -36,10 +50,13 @@ function Form() {
               id="inputWeight"
               aria-describedby="inputWeight"
               name="weight"
+              value={weightValue}
+              onChange={handleWeightChange}
             />
           </Col>
         </Container>
       </div>
+      <Calculator weight={weightValue} height={heightValue} />
       <Container>
         <Col xs={4}>
           <button type="submit" className="btn btn-primary">
