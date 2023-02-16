@@ -1,12 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import { Container, Col } from "reactstrap";
 
 function Form(props) {
-  const [bmiValue, setBmiValue] = useState({});
+  const { onChange, value, inputId, name, label, placeholder } = props;
 
   const handleChange = (event) => {
     const { name, value } = event.target;
-    setBmiValue((prevInputs) => ({ ...prevInputs, [name]: value }));
+    onChange(name, value);
   };
 
   return (
@@ -14,18 +14,18 @@ function Form(props) {
       <div className="mb-3">
         <Container>
           <Col xs={4}>
-            <label htmlFor={props.inputHeight} className="form-label">
-              {props.label}
+            <label htmlFor={inputId} className="form-label">
+              {label}
             </label>
             <input
               type="number"
               step=".01"
               className="form-control"
-              value={bmiValue[props.name] || ""}
-              id={props.inputHeight}
-              aria-describedby={props.inputHeight}
-              name={props.name}
-              placeholder={props.placeholder}
+              value={value}
+              id={inputId}
+              aria-describedby={inputId}
+              name={name}
+              placeholder={placeholder}
               onChange={handleChange}
             />
           </Col>

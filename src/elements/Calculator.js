@@ -1,7 +1,5 @@
-import React from "react";
-
-function Calculator({ weight, height }) {
-  const bmi = weight / Math.pow(height, 2);
+function Calculator(props) {
+  const bmi = props.weight / Math.pow(props.height, 2);
   let interpretation;
 
   if (bmi < 18.5) {
@@ -15,7 +13,7 @@ function Calculator({ weight, height }) {
       "Seu IMC é " + bmi.toFixed(2) + ", você está dentro do peso ideal.";
   }
 
-  return <div>{interpretation}</div>;
+  console.log(interpretation);
 }
 
 export default Calculator;

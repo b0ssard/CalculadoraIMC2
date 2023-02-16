@@ -13,7 +13,8 @@ O desafio inicial é criar o projeto utilizando React, o estilizando com o Boots
 - Criar a área de inputs. // Realizado em 14/02
 - Criar arrays com as respostas. \*json? // Realizado em 14/02
 - Criar mais faixas(?) Ex: Obesidade 1, Obesidade 2... // Realizado em 14/02
-- Fazer as props dos inputs para a calculadora.
+- Passar as props do app para o form. // Realizado em 15/02
+- As props devem ir do Form para Calculator ou doApp diretor para Calculator??
 - Alterar a sintaxe da fórmula da calculadora.
 - Fazer as props da calculadora para geração de cards.
 - Resposta no formato de cards para melhorar visibilidade(?). \*usar mapeamento.
