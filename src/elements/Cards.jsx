@@ -5,7 +5,7 @@ function Cards() {
   const classes = data.weightClasses;
 
   return (
-    <P>ANSWERS CARDS</P>
+    <p>ANSWERS CARDS</p>
     // <div>
     //   <ul>
     //     {classes.map((classes, key) => (
