@@ -1,21 +1,30 @@
-// import React from "react";
-// import data from "./data.json";
+import React from "react";
+import { Card, CardBody, CardTitle, CardSubtitle, CardText } from "reactstrap";
 
-// function Cards() {
-//   const classes = data.weightClasses;
+function Cards(props) {
+  return (
+    <Card
+      style={{
+        width: "18rem",
+      }}
+    >
+      <img alt="Sample" src={props.img} />
+      <CardBody>
+        <CardTitle tag="h5">{props.title}</CardTitle>
+        <CardSubtitle className="mb-2 text-muted" tag="h6">
+          De {props.min} até {props.max}
+        </CardSubtitle>
+        <CardText>
+        <p>Altura: {props.height} Peso: {props.weight}</p>
+          <p>
+            Seu IMC é de {props.bmi}. Você está na faixa definida como{" "}
+            {props.title}.
+          </p>
+          <p>{props.def}</p>
+        </CardText>
+      </CardBody>
+    </Card>
+  );
+}
 
-//   return (
-//     <p>ANSWERS CARDS</p>
-//     <div>
-//       <ul>
-//         {classes.map((classes, key) => (
-//           <li key={classes.key}>
-//             {classes.class} - {classes.bmiMin} - {classes.Max}
-//           </li>
-//         ))}
-//       </ul>
-//     </div>
-//   );
-// }
-
-// export default Cards;
+export default Cards;
