@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import Form from "./Form";
 import SubmitButton from "./Button";
+import Calculator from "./Calculator";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
-// import Calculator from "./Calculator";
 
 function App() {
   const [height, setHeight] = useState("");
   const [weight, setWeight] = useState("");
+  const [interpretation, setInterpretation] = useState("");
 
   const handleInputChange = (name, value) => {
     if (name === "height") {
@@ -19,21 +20,8 @@ function App() {
 
   const calculateBmi = (event) => {
     event.preventDefault();
-    const bmi = weight / Math.pow(height, 2);
-    let interpretation;
-
-    if (bmi < 18.5) {
-      interpretation =
-        "Seu IMC é " + bmi.toFixed(2) + ", você está abaixo do peso ideal.";
-    } else if (bmi > 24.9) {
-      interpretation =
-        "Seu IMC é " + bmi.toFixed(2) + ", você está acima do peso ideal.";
-    } else {
-      interpretation =
-        "Seu IMC é " + bmi.toFixed(2) + ", você está dentro do peso ideal.";
-    }
-
-    console.log(interpretation);
+    const interpretation = <Calculator height={height} weight={weight} />;
+    setInterpretation(interpretation);
   };
 
   return (
@@ -55,6 +43,7 @@ function App() {
         onChange={handleInputChange}
       />
       <SubmitButton buttonText="Calcular" onClick={calculateBmi} />
+      {interpretation && <p>{interpretation}</p>}
     </div>
   );
 }
