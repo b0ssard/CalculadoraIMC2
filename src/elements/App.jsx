@@ -1,18 +1,16 @@
 import React, { useState } from "react";
 import Form from "./Form";
 import SubmitButton from "./Button";
-// import Calculator from "./Calculator";
 import weightClasses from "./data";
 import Cards from "./Cards";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min";
 
 function App() {
   const [height, setHeight] = useState("");
   const [weight, setWeight] = useState("");
   const [showCard, setShowCard] = useState(false);
   const [bmi, setBmi] = useState("");
-  const [weightClass, setWeightClass] = useState("")
+  const [weightClass, setWeightClass] = useState("");
 
   const handleInputChange = (name, value) => {
     if (name === "height") {
@@ -25,11 +23,14 @@ function App() {
   const calculateBmi = (event) => {
     event.preventDefault();
     const bmi = parseFloat((weight / (height * height)).toFixed(2));
-    setWeightClass(weightClasses.find(
+    const calculatedWeightClass = weightClasses.find(
       (wc) => bmi >= wc.bmiMin && bmi <= wc.bmiMax
-    ));
-    setBmi(bmi);
-    setShowCard(true);
+    );
+    if (calculatedWeightClass) {
+      setWeightClass(calculatedWeightClass);
+      setBmi(bmi);
+      setShowCard(true);
+    }
   };
 
   return (
@@ -51,13 +52,13 @@ function App() {
         onChange={handleInputChange}
       />
       <SubmitButton buttonText="Calcular" onClick={calculateBmi} />
-      {showCard && (
+      {showCard && weightClass && (
         <Cards
           img={weightClass.image}
           title={weightClass.class}
           min={weightClass.bmiMin}
           max={weightClass.bmiMax}
-          bmi={bmi.toFixed(2)}
+          bmi={bmi}
           weight={weight}
           height={height}
           def={weightClass.def}
