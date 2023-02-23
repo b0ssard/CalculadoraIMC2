@@ -6,7 +6,7 @@ function SubmitButton(props) {
   return  (
   <Container>
         <Button
-          color="primary"
+          color="success"
           tag="input"
           type="submit"
           value={props.buttonText}

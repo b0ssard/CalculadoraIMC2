@@ -1,7 +1,8 @@
-import React from "react";
+import React from "react"
 import { Card, CardBody, CardTitle, CardSubtitle, CardText } from "reactstrap";
 
 function Cards(props) {
+  
   return (
     <div>
       <Card
@@ -24,8 +25,12 @@ function Cards(props) {
           </CardText>
           <CardText>{props.def}</CardText>
           <CardText>
-            Para mais informações:{" "}
-            <a href="https://bvsms.saude.gov.br/obesidade-18/#:~:text=A%20obesidade%20%C3%A9%20o%20ac%C3%BAmulo,que%20o%20gasto%20energ%C3%A9tico%20correspondente.">
+            Para mais informações{" "}
+            <a
+              href="https://bvsms.saude.gov.br/obesidade-18/#:~:text=A%20obesidade%20%C3%A9%20o%20ac%C3%BAmulo,que%20o%20gasto%20energ%C3%A9tico%20correspondente."
+              target="_blank"
+              rel="noreferrer"
+            >
               Ministério da Saúde
             </a>
           </CardText>

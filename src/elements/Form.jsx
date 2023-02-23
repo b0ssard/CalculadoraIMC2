@@ -13,22 +13,22 @@ function Form(props) {
     <form>
       <div className="mb-3">
         <Container>
-          <Col xs={4}>
-            <label htmlFor={inputId} className="form-label">
-              {label}
-            </label>
-            <input
-              type="number"
-              step=".01"
-              className="form-control"
-              value={value}
-              id={inputId}
-              aria-describedby={inputId}
-              name={name}
-              placeholder={placeholder}
-              onChange={handleChange}
-            />
-          </Col>
+            <Col xs={4}>
+              <label htmlFor={inputId} className="form-label">
+                {label}
+              </label>
+              <input
+                type="number"
+                step=".01"
+                className="form-control"
+                value={value}
+                id={inputId}
+                aria-describedby={inputId}
+                name={name}
+                placeholder={placeholder}
+                onChange={handleChange}
+              />
+            </Col>
         </Container>
       </div>
     </form>
