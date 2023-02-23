@@ -23,6 +23,12 @@ function Cards(props) {
             {props.title}.
           </CardText>
           <CardText>{props.def}</CardText>
+          <CardText>
+            Para mais informações:{" "}
+            <a href="https://bvsms.saude.gov.br/obesidade-18/#:~:text=A%20obesidade%20%C3%A9%20o%20ac%C3%BAmulo,que%20o%20gasto%20energ%C3%A9tico%20correspondente.">
+              Ministério da Saúde
+            </a>
+          </CardText>
         </CardBody>
       </Card>
     </div>

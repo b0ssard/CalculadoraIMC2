@@ -3,7 +3,9 @@ import Form from "./Form";
 import SubmitButton from "./Button";
 import weightClasses from "./data";
 import Cards from "./Cards";
+import Switch from "./Switch";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
 
 function App() {
   const [height, setHeight] = useState("");
@@ -11,6 +13,7 @@ function App() {
   const [showCard, setShowCard] = useState(false);
   const [bmi, setBmi] = useState("");
   const [weightClass, setWeightClass] = useState("");
+  const [system, setSystem] = useState("metric");
 
   const handleInputChange = (name, value) => {
     if (name === "height") {
@@ -20,9 +23,18 @@ function App() {
     }
   };
 
+  const toggleSystem = () => {
+    setSystem(system === "metric" ? "imperial" : "metric");
+  };
+
   const calculateBmi = (event) => {
     event.preventDefault();
-    const bmi = parseFloat((weight / (height * height)).toFixed(2));
+    let bmi;
+    if (system === "metric") {
+      bmi = parseFloat((weight / (height * height)).toFixed(2));
+    } else {
+      bmi = parseFloat(((weight * 703) / (height * height)).toFixed(2));
+    }
     const calculatedWeightClass = weightClasses.find(
       (wc) => bmi >= wc.bmiMin && bmi <= wc.bmiMax
     );
@@ -35,18 +47,19 @@ function App() {
 
   return (
     <div>
+      <Switch system={system} toggleSystem={toggleSystem} />
       <Form
         inputId="inputHeight"
-        label="Altura (em metros)"
-        placeholder="Ex: 1.80"
+        label={`Altura (em ${system === "metric" ? "metros" : "polegadas"})`}
+        placeholder={`Ex: ${system === "metric" ? "1.80" : "70"}`}
         name="height"
         value={height}
         onChange={handleInputChange}
       />
       <Form
         inputId="inputWeight"
-        label="Peso (em kilos)"
-        placeholder="Ex: 80.75"
+        label={`Peso (em ${system === "metric" ? "kilos" : "libras"})`}
+        placeholder={`Ex: ${system === "metric" ? "80.75" : "150"}`}
         name="weight"
         value={weight}
         onChange={handleInputChange}
@@ -62,6 +75,7 @@ function App() {
           weight={weight}
           height={height}
           def={weightClass.def}
+          system={system}
         />
       )}
     </div>

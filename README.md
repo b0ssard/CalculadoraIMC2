@@ -4,7 +4,7 @@ Develop a BMI Calulator in portuguese. Using the metric and imperial systems.
 
 ## Aprendizados
 
-O desafio inicial é criar o projeto utilizando React, o estilizando com o Bootstrap. O prazo é de uma semana.
+O desafio inicial é criar o projeto utilizando React, o estilizando com o Bootstrap.
 
 ## Roadmap
 
@@ -15,13 +15,13 @@ O desafio inicial é criar o projeto utilizando React, o estilizando com o Boots
 - Criar mais faixas(?) Ex: Obesidade 1, Obesidade 2... // Realizado em 14/02
 - Passar as props do app para o form. // Realizado em 15/02
 - Props de App para Calculator. // Realizado em 16/02
-- Alterar a sintaxe da fórmula da calculadora. // Realizado em 16/02
-- Fazer as props da calculadora para geração de cards.
-- Resposta no formato de cards para melhorar visibilidade(?). \*usar mapeamento.
-- Conseguir alterar sistemas métricos.
-- Melhorar o feedback.
-- Mudar língua(?).
-- Links para entidades de saúde, conscientização de que é necessário acompanhamento real e que isso é apenas uma estimativa.
+- Alterar a sintaxe da fórmula da calculadora. // Realizado em 17/02
+- Fazer as props da calculadora para geração de cards. // Realizado em 17/02
+- Resposta no formato de cards para melhorar visibilidade(?).  // Realizado em 17/02
+- Conseguir alterar sistemas métricos.  // Realizado em 23/02
+- Melhorar o feedback.  // Realizado em 17/02
+- Mudar língua(?).  // CANCELADO!
+- Links para entidades de saúde, conscientização de que é necessário acompanhamento real e que isso é apenas uma estimativa. // Realizado em 17/02
 
 ### Layout
 
