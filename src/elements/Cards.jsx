@@ -6,9 +6,7 @@ function Cards(props) {
   return (
     <div>
       <Card
-        style={{
-          width: "18rem",
-        }}
+        className="card-background"
       >
         <img alt="Sample" src={props.img} />
         <CardBody>

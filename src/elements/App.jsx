@@ -7,7 +7,6 @@ import Cards from "./Cards";
 import Switch from "./Switch";
 import Header from "./Header";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min";
 
 function App() {
   const [height, setHeight] = useState("");
@@ -49,7 +48,7 @@ function App() {
 
   return (
     <div>
-    <Header />
+      <Header />
       <Container>
         <Row>
           <Col>
