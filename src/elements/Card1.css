@@ -1,0 +1,80 @@
+.card {
+    color: #6e798c;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    font-family: Open Sans, Arial;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 25px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.card-background {
+    height: 100%;
+    border-radius: 16px;
+    flex-direction: row;
+    flex-basis: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 8px;
+    display: flex;
+}
+
+.icon-background {
+    width: 321px;
+    height: 372px;
+    object-fit: cover;
+    border-radius: 16px 0 0 16px;
+}
+
+.flex-container {
+    height: 95%;
+    flex-direction: column;
+    flex-basis: 60%;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-top: 3px;
+    margin-bottom: 14px;
+    display: flex;
+}
+
+.sobrepeso {
+    margin-left: 20px;
+    font-size: 1.5rem;
+    line-height: 33px;
+}
+
+.image {
+    margin-left: 40px;
+}
+
+.de-123-at-124 {
+    margin-bottom: 7px;
+    margin-left: 21px;
+}
+
+.seu-imc-de-2778-voc {
+    color: #081f32;
+    align-self: flex-end;
+    margin-top: 2px;
+    margin-bottom: 6px;
+    font-family: DM Serif Display, Arial;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 46px;
+}
+
+.esse-o-primeiro-sin {
+    color: #374a59;
+    margin-top: 2px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.saiba-mais {
+    text-align: right;
+    color: #007ae9;
+    align-self: flex-end;
+}

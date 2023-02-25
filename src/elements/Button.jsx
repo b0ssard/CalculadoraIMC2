@@ -3,16 +3,17 @@ import { Container, Button } from "reactstrap";
 
 function SubmitButton(props) {
 
-  return  (
-  <Container>
-        <Button
-          color="success"
-          tag="input"
-          type="submit"
-          value={props.buttonText}
-          onClick={props.onClick}
-        />
-    </Container>)
+  return (
+    <Container>
+      <Button
+        style={{ backgroundColor: "#14C38E" }}
+        tag="input"
+        type="submit"
+        value={props.buttonText}
+        onClick={props.onClick}
+      />
+    </Container>
+  );
 }
 
 

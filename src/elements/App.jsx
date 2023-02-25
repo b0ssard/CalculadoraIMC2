@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { Row, Col, Container} from "reactstrap";
+import { Row, Col, Container } from "reactstrap";
 import Form from "./Form";
 import SubmitButton from "./Button";
 import weightClasses from "./data";
-import Cards from "./Cards";
+import Card from "./Card1";
 import Switch from "./Switch";
 import Header from "./Header";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -75,14 +75,12 @@ function App() {
           </Col>
           <Col>
             {showCard && weightClass && (
-              <Cards
+              <Card
                 img={weightClass.image}
                 title={weightClass.class}
                 min={weightClass.bmiMin}
                 max={weightClass.bmiMax}
                 bmi={bmi}
-                weight={weight}
-                height={height}
                 def={weightClass.def}
                 system={system}
               />
