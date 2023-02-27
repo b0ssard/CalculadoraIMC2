@@ -26,8 +26,8 @@ O desafio inicial é criar o projeto utilizando React, o estilizando com o Boots
 ### Layout
 
 - \*scss?
-- Header com breve apresentação.
-- Botão slider para alterar sistema métrico.
-- Footer com meus dados.
-- Responsividade.
-- Paleta verde (saúde).
+- Header com breve apresentação. // Feito em 24/02
+- Botão slider para alterar sistema métrico. // Feito em 24/02
+- Footer com meus dados. // CANCELADO!
+- Responsividade. // Feito em: 27/02
+- Paleta verde (saúde). // Feito em: 24/02
