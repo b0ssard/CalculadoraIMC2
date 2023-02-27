@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Col } from "reactstrap";
+import "./Form.css";
 
 function Form(props) {
   const { onChange, value, inputId, name, label, placeholder } = props;
@@ -11,7 +12,7 @@ function Form(props) {
 
   return (
     <form>
-      <div className="mb-3">
+      <div className="mb-3 formulary">
         <Container>
             <Col xs={4}>
               <label htmlFor={inputId} className="form-label">

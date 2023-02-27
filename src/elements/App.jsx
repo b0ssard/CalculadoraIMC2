@@ -51,7 +51,7 @@ function App() {
       <Header />
       <Container>
         <Row>
-          <Col>
+          <Col xs={12} lg={6}>
             <Switch system={system} toggleSystem={toggleSystem} />
             <Form
               inputId="inputHeight"
@@ -73,7 +73,7 @@ function App() {
             />
             <SubmitButton buttonText="Calcular" onClick={calculateBmi} />
           </Col>
-          <Col>
+          <Col xs={12} lg={6}>
             {showCard && weightClass && (
               <Card
                 img={weightClass.image}

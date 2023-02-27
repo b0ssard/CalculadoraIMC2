@@ -1,11 +1,12 @@
 import React from "react";
 import { Container, Col, Form, FormGroup, Label, Input } from 'reactstrap';
+import "./Form.css";
 
 function Switch(props) {
   const { system, toggleSystem } = props;
 
   return (
-    <div className="mb-3">
+    <div className="mb-3 formulary">
       <Container>
         <Col xs={4}>
           <Form>

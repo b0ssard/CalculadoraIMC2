@@ -13,9 +13,13 @@
   line-height: 19px;
   display: flex;
   margin-bottom: 30px;
-  margin-top:5px;
-  border: 10px;
+  margin-top: 5px;
   border-radius: 16px;
+
+}
+
+.navbar-info{
+  
 }
 
 .calculadora-de-imc {
@@ -23,12 +27,23 @@
   font-size: 1.714rem;
   font-weight: 600;
   line-height: 29px;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
 }
 
 .por-victor-bossard {
   text-transform: capitalize;
-  margin-top: 1px;
+  margin-top: 20px;
   margin-left: 133px;
+  font-family: 'Finlandica', sans-serif;
+}
+
+.contacts {
+  margin-left: 35px;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
 .image-1 {
@@ -37,30 +52,6 @@
   object-fit: cover;
   background-position: center;
   background-size: cover;
-  margin-top: 1px;
+  margin-top: 10px;
   margin-left: 35px;
-}
-
-.linkedin {
-  text-transform: capitalize;
-  margin-top: 1px;
-  margin-left: 9px;
-}
-
-.image-2 {
-  width: 29px;
-  height: 23px;
-  object-fit: cover;
-  background-position: center;
-  background-size: cover;
-  margin-left: 12px;
-  position: absolute;
-  top: 31px;
-  left: 728px;
-}
-
-.git-hub {
-  text-transform: capitalize;
-  margin-top: 1px;
-  margin-left: 9px;
 }

@@ -20,6 +20,7 @@
     align-items: center;
     padding-right: 8px;
     display: flex;
+    background-color: #EDF1D6;
 }
 
 .icon-background {
@@ -41,6 +42,7 @@
 }
 
 .sobrepeso {
+    font-family: 'Roboto', sans-serif;
     margin-left: 20px;
     font-size: 1.5rem;
     line-height: 33px;
@@ -51,6 +53,7 @@
 }
 
 .de-123-at-124 {
+    font-family: 'Roboto', sans-serif;
     margin-bottom: 7px;
     margin-left: 21px;
 }
@@ -60,7 +63,7 @@
     align-self: flex-end;
     margin-top: 2px;
     margin-bottom: 6px;
-    font-family: DM Serif Display, Arial;
+    font-family: 'Roboto', sans-serif;
     font-size: 2rem;
     font-weight: 400;
     line-height: 46px;
@@ -71,9 +74,11 @@
     margin-top: 2px;
     font-weight: 400;
     line-height: 27px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .saiba-mais {
+    font-family: 'Roboto', sans-serif;
     text-align: right;
     color: #007ae9;
     align-self: flex-end;
