@@ -62,6 +62,7 @@ function App() {
               name="height"
               value={height}
               onChange={handleInputChange}
+              onSubmit={calculateBmi}
             />
             <Form
               inputId="inputWeight"
@@ -70,6 +71,7 @@ function App() {
               name="weight"
               value={weight}
               onChange={handleInputChange}
+              onSubmit={calculateBmi}
             />
             <SubmitButton buttonText="Calcular" onClick={calculateBmi} />
           </Col>
