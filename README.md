@@ -1,33 +1,32 @@
-# Calculadora IMC 2
+# Calculadora IMC
 
-Develop a BMI Calulator in portuguese. Using the metric and imperial systems.
+https://calculadoradeimc2.netlify.app/
+
+Desenvolva uma Calculadora de IMC em português, utilizando os sistemas métrico e imperial.
 
 ## Aprendizados
 
-O desafio inicial é criar o projeto utilizando React, o estilizando com o Bootstrap.
+O desafio inicial é criar o projeto utilizando React, estilizando-o com Bootstrap.
 
 ## Roadmap
 
-- Fórmula da calculadora. //Realizado em: 12/02
-- Add o Bootsrap. //Realizado em: 12/02 / Consertado em: 14/02
-- Criar a área de inputs. // Realizado em 14/02
-- Criar arrays com as respostas. \*json? // Realizado em 14/02
-- Criar mais faixas(?) Ex: Obesidade 1, Obesidade 2... // Realizado em 14/02
-- Passar as props do app para o form. // Realizado em 15/02
-- Props de App para Calculator. // Realizado em 16/02
-- Alterar a sintaxe da fórmula da calculadora. // Realizado em 17/02
-- Fazer as props da calculadora para geração de cards. // Realizado em 17/02
-- Resposta no formato de cards para melhorar visibilidade(?).  // Realizado em 17/02
-- Conseguir alterar sistemas métricos.  // Realizado em 23/02
-- Melhorar o feedback.  // Realizado em 17/02
-- Mudar língua(?).  // CANCELADO!
-- Links para entidades de saúde, conscientização de que é necessário acompanhamento real e que isso é apenas uma estimativa. // Realizado em 17/02
+- **Fórmula da calculadora**: Implementar a fórmula para calcular o IMC.
+- **Adicionar Bootstrap**: Integrar Bootstrap para estilização.
+- **Criar área de inputs**: Desenvolver a interface de entrada de dados.
+- **Criar arrays de respostas**: Utilizar JSON para armazenar respostas.
+- **Adicionar mais faixas de IMC**: Incluir categorias como Obesidade 1, Obesidade 2, etc.
+- **Passar props do App para o Form**: Implementar comunicação de dados entre componentes.
+- **Passar props do App para a Calculadora**: Continuar a comunicação de dados entre componentes.
+- **Alterar sintaxe da fórmula da calculadora**: Refatorar a fórmula conforme necessário.
+- **Geração de cards com props da calculadora**: Exibir resultados em formato de cartões para melhor visibilidade.
+- **Alterar sistemas métricos**: Permitir a alternância entre sistemas métrico e imperial.
+- **Melhorar feedback**: Aperfeiçoar a resposta visual e funcional do aplicativo.
+- **Links para entidades de saúde**: Incluir links para conscientização e acompanhamento médico, enfatizando que a calculadora é apenas uma estimativa.
 
 ### Layout
 
-- \*scss?
-- Header com breve apresentação. // Feito em 24/02
-- Botão slider para alterar sistema métrico. // Feito em 24/02
-- Footer com meus dados. // CANCELADO!
-- Responsividade. // Feito em: 27/02
-- Paleta verde (saúde). // Feito em: 24/02
+- **Estilização com SCSS**: Utilizar SCSS para customizações adicionais.
+- **Header com apresentação**: Incluir um cabeçalho com uma breve introdução.
+- **Botão slider para alterar sistema métrico**: Adicionar um controle deslizante para alternar entre sistemas métricos.
+- **Responsividade**: Garantir que a interface seja responsiva e adaptável a diferentes dispositivos.
+- **Paleta verde (saúde)**: Utilizar uma paleta de cores verdes para remeter à saúde.
